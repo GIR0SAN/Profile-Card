@@ -1,40 +1,113 @@
-/* 
-<style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root{
+	--principal-font: 'Kumbh Sans', sans-serif;
+	--Dark-cyan: hsl(185, 75%, 39%);
+	--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+	--Dark-grayish-blue: hsl(227, 10%, 46%);
+	--Dark-gray: hsl(0, 0%, 59%);
+}
+body{
+	font-family: var(--principal-font);
+}
+.l-main{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background: var(--Dark-cyan);
+}
+.c-image__top{
+	position: absolute;
+	top:-100%;
+	left: -25%;
+}
+.c-image___bottom{
+	position: absolute;
+	top:50%;
+	right: -20%;
+}
+.l-card{
+	width: 350px;
+	border-radius: 16px;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+.c-bg__card{
+	border-radius: 16px 16px 0 0 ;
+	margin-bottom: 75px;
+}
+.c-colaborator-image{
+	border-radius: 50%;
+	border: 8px solid white;
+	position: absolute;
+	right: 120px;
+	top: 21%;
+}
+.l-data__colaborator{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	gap: 16px;
+	margin-bottom: 8px;
+}
+.c-h1{
+	font-size:18px;
+	color: var(--Very-dark-desaturated-blue);
+	font-weight: 700;
+}
+.c-h2{
+	color: var(--Dark-gray);
+	font-size: 18px;
+	font-weight: 400;
+}
+.c-paragraph{
+	color: var(--Dark-gray);
+	font-size: 16px;
+	margin-bottom: 60px;
+}
+.l-status__wrapper{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	margin-bottom: 30px;
+}
+.c-h3{
+	color: var(--Very-dark-desaturated-blue);
+	font-size: 16px;
+	font-weight: 700px;
+}
+.c-small{
+	color: var(--Dark-gray);
+}
 
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-Dark cyan: hsl(185, 75%, 39%)
-Very dark desaturated blue: hsl(229, 23%, 23%)
-Dark grayish blue: hsl(227, 10%, 46%)
-
-### Neutral
-
-Dark gray: hsl(0, 0%, 59%)
-
-## Typography
-
-### Body Copy
-
-- Font size (name and stats): 18px
-
-### Font
-
-- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
-- Weights: 400, 700
-
-font-family: 'Kumbh Sans', sans-serif;
-*/
+@media screen and (max-width:375px) {
+	.l-main{
+		max-width: 375px;
+		max-height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		background: var(--Dark-cyan);
+		overflow: hidden;
+	}
+	.c-image__top{
+		position: absolute;
+		top:-400px;
+		left: -800px;	
+}
+	.c-image___bottom{
+		position: absolute;
+		top:500px;
+		left: 20%;
+}
