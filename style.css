@@ -21,6 +21,7 @@ body{
 	align-items: center;
 	position: relative;
 	background: var(--Dark-cyan);
+	overflow: hidden;
 }
 .c-image__top{
 	position: absolute;
@@ -94,12 +95,6 @@ body{
 	.l-main{
 		max-width: 375px;
 		max-height: auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: relative;
-		background: var(--Dark-cyan);
-		overflow: hidden;
 	}
 	.c-image__top{
 		position: absolute;
